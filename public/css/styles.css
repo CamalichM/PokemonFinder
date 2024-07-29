@@ -32,6 +32,11 @@ body {
     border-radius: 15px;
     padding: 20px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+}
+
+.container.fade-in-slide {
+    animation: fadeInSlide 1s forwards;
 }
 
 h1 {

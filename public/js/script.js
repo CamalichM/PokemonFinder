@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     const searchButton = document.getElementById('search-button');
     const searchInput = document.getElementById('search-input');
+    const container = document.querySelector('.container');
+
+    container.classList.add('fade-in-slide');
 
     searchButton.addEventListener('click', function () {
         const query = searchInput.value.trim().toLowerCase();
@@ -31,14 +34,13 @@ document.addEventListener("DOMContentLoaded", function () {
         const specialAttack = document.getElementById('special-attack');
         const specialDefense = document.getElementById('special-defense');
         const speed = document.getElementById('speed');
-        document.querySelectorAll('.fade-in-slide').forEach(el => el.classList.remove('fade-in-slide'));
 
+        sprite.src = data.sprites.front_default;
+        sprite.style.display = 'block';
         pokemonName.textContent = data.name.toUpperCase();
         pokemonId.textContent = `#${data.id}`;
         weight.textContent = `Weight: ${data.weight}`;
         height.textContent = `Height: ${data.height}`;
-        sprite.src = data.sprites.front_default;
-        sprite.style.display = 'block';
         hp.textContent = data.stats[0].base_stat;
         attack.textContent = data.stats[1].base_stat;
         defense.textContent = data.stats[2].base_stat;
