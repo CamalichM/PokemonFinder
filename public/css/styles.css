@@ -1,0 +1,130 @@
+@keyframes fadeInSlide {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-slide {
+    animation: fadeInSlide 0.5s ease-out;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2e003e;
+    color: #f7f7f7;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    background-color: #3d0040;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    color: #d4a0d3;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.search-section {
+    margin-bottom: 20px;
+}
+
+#search-input {
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #d4a0d3;
+    border-radius: 25px;
+    margin-right: 10px;
+    width: calc(100% - 140px);
+    background-color: #3d0040;
+    color: #f7f7f7;
+    outline: none;
+}
+
+#search-input:focus {
+    border-color: #b36f9c;
+}
+
+#search-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    background-color: #d4a0d3;
+    color: #2e003e;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#search-button:hover {
+    background-color: #b36f9c;
+    transform: scale(1.05);
+}
+
+.pokemon-info {
+    background-color: #3d0040;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    color: #f7f7f7;
+}
+
+.pokemon-info img {
+    max-width: 200px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+#types {
+    margin: 10px 0;
+}
+
+#types div {
+    display: inline-block;
+    background-color: #d4a0d3;
+    color: #2e003e;
+    padding: 8px 16px;
+    border-radius: 20px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.stats-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #4a004a;
+    border-radius: 10px;
+}
+
+.stats-table th, .stats-table td {
+    padding: 12px 20px;
+    border: 1px solid #b36f9c;
+    color: #f7f7f7;
+}
+
+.stats-table th {
+    text-align: left;
+    background-color: #2e003e;
+    font-weight: bold;
+}
+
+.stats-table td {
+    background-color: #4a004a;
+}
